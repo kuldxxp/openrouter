@@ -9,16 +9,17 @@
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
+    "elysia": "^1.4.25",
     "prettier": "^3.7.4",
     "turbo": "^2.8.10",
-    "typescript": "5.9.2"
+    "typescript": "^5.9.3"
   },
   "engines": {
     "node": ">=18"
   },
   "packageManager": "bun@1.3.9",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "workspaces": ["apps/*", "packages/*"],
+  "dependencies": {
+    "@elysiajs/eden": "^1.4.8"
+  }
 }
