@@ -29,7 +29,7 @@ export namespace AuthModel {
     export type loginSchema = typeof loginSchema.static;
 
     export const loginResponseSchema = t.Object({
-        token: t.String(),
+        message: t.Literal('Login successful'),
     });
 
     export type loginResponseSchema = typeof loginResponseSchema.static;
