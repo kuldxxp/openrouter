@@ -8,7 +8,7 @@ export const app = new Elysia({ prefix: '/auth' })
     .use(
         jwt({
             name: 'jwt',
-            secret: String(process.env.JWT_SECRET) || 'dev secret',
+            secret: process.env.JWT_SECRET ?? 'dev secret',
         })
     )
     .post('/sign-up', async ({ body, status }) => {
